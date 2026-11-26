@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: toDo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/to_do
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    format-sql: true
+  flyway:
+    enabled: true
